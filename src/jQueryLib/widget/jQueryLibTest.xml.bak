@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="jQueryLib.widget.jQueryLibTest" needsEntityContext="false"  xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ widget.xsd">
+	<name>jQueryLib Test</name>
+	<description>jQueryLib Test</description>
+	<icon/>
+	<properties>
+		<property key="active" type="boolean" defaultValue="true">
+			<caption>Active</caption>
+			<category>General</category>
+                        <description>Void Property; Widhet only for testing, Do not Include this in your project (all version of jQuery will be loaded)</description>
+		</property>
+	</properties>
+</widget>

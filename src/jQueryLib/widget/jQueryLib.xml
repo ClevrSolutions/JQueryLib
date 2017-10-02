@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="jQueryLib.widget.jQueryLib" needsEntityContext="false"  xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ widget.xsd">
+    <name>jQueryLib</name>
+    <description>jQueryLib</description>
+    <icon/>
+    <properties>
+        <property key="active" type="boolean" defaultValue="true">
+            <caption>Active</caption>
+            <category>General</category>
+                        <description>Void Property, Include this widget in one of your Application pages, so it the jQuery Libs are loaded in the runtime. In the index.html include the packages you need in the dojoConfig:
+                            
+                            dojoConfig = {
+                                isDebug: false,
+                                rtlRedirect: "index-rtl.html",
+                                baseUrl: "mxclientsystem/dojo/",
+                                packages: [
+                                    { name: 'jquery17', location: '../../widgets/jQueryLib', main: 'jquery-172-min' },
+                                    { name: 'jquery18', location: '../../widgets/jQueryLib', main: 'jquery-183-min' },
+                                    { name: 'jquery19', location: '../../widgets/jQueryLib', main: 'jquery-191-min' },
+                                    { name: 'jquery110', location: '../../widgets/jQueryLib', main: 'jquery-110-min' },
+                                    { name: 'jquery111', location: '../../widgets/jQueryLib', main: 'jquery-1111-min' },
+                                    { name: 'jquery20', location: '../../widgets/jQueryLib', main: 'jquery-203-min' },
+                                    { name: 'jquery21', location: '../../widgets/jQueryLib', main: 'jquery-211-min' }
+                                ]
+                            };. 
+                            
+                            In the widget require the nesesery jquery package like:
+                            
+                            require(["jquery17", "jquery18", "jquery19", "jquery110", "jquery111", "jquery20", "jquery21"], function(jQuery17, jQuery18, jQuery19, jQuery110, jQuery111, jQuery20, jQuery21) {
+                                    // Your Lib or Widget Code
+                            });
+
+                        </description>
+        </property>
+    </properties>
+</widget>

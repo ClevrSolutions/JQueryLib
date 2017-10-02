@@ -1,0 +1,23 @@
+//Empty Widget to inclulde jQuery Libs
+
+require(["jquery17", "jquery18", "jquery19", "jquery110", "jquery111", "jquery20", "jquery21"], function(jQuery17, jQuery18, jQuery19, jQuery110, jQuery111, jQuery20, jQuery21) {
+    mxui.widget.declare("jQueryLib.widget.jQueryLib", {
+        inputargs: {
+            name:""
+        },
+        postCreate : function(){
+            var $ = mxui.dom.create;
+            var list = $("ul", 
+                            $("li", jQuery17.fn.jquery),
+                            $("li", jQuery18.fn.jquery), 
+                            $("li", jQuery19.fn.jquery),
+                            $("li", jQuery110.fn.jquery),
+                            $("li", jQuery111.fn.jquery),
+                            $("li", jQuery20.fn.jquery),
+                            $("li", jQuery21.fn.jquery)
+                        );
+            this.domNode.appendChild(list);
+            this.actRendered();
+        }
+    });
+});
